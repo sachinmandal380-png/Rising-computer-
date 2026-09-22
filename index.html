@@ -725,7 +725,7 @@ document.getElementById('waLink').href = 'https://wa.me/918743930413?text=' + en
 // ---- Admission form ----
 // If a webhook URL is configured (e.g. via your automation platform), set it here.
 // Leave blank to store submissions in the artifact's own data store instead.
-const ADMISSION_WEBHOOK_URL = "http://localhost:5678/webhook/rising-admission";
+const ADMISSION_WEBHOOK_URL = "http://n8n.risingcomputer.site/webhook/rising-admission";
 
 const form = document.getElementById('admissionForm');
 const statusEl = document.getElementById('formStatus');
@@ -774,7 +774,7 @@ form.addEventListener('submit', async (e)=>{
     showStatus('Application received — the admissions team will contact you shortly.', true);
     form.reset();
   } else {
-    showStatus("We couldn't submit automatically. Please WhatsApp or call us at +91 97295 79021 — we'll take it from there.", false);
+    showStatus("We couldn't submit automatically. Please WhatsApp or call us at +91 87439 30413 — we'll take it from there.", false);
   }
 });
 </script>
